@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>cookies1</servlet-name>
+        <servlet-class>cookies1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cookies2</servlet-name>
+        <servlet-class>cookies2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Process1</servlet-name>
+        <servlet-class>Process1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookies1</servlet-name>
+        <url-pattern>/cookies1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cookies2</servlet-name>
+        <url-pattern>/cookies2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Process1</servlet-name>
+        <url-pattern>/process1</url-pattern>
+    </servlet-mapping>
+</web-app>

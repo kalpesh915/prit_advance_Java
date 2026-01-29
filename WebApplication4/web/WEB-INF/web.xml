@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>Session1</servlet-name>
+        <servlet-class>Session1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Session2</servlet-name>
+        <servlet-class>Session2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Session3</servlet-name>
+        <servlet-class>Session3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Session1</servlet-name>
+        <url-pattern>/session1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Session2</servlet-name>
+        <url-pattern>/session2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Session3</servlet-name>
+        <url-pattern>/session3</url-pattern>
+    </servlet-mapping>
+</web-app>
