@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>NewServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-class>BlockIPAddress</filter-class>
+        <filter-name>blockip</filter-name>
+    </filter>
+    <filter-mapping>
+        <filter-name>blockip</filter-name>
+        <url-pattern>/servlet1</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-class>Greetings</filter-class>
+        <filter-name>greet</filter-name>
+    </filter>
+    <filter-mapping>
+        <filter-name>greet</filter-name>
+        <url-pattern>/servlet1</url-pattern>
+    </filter-mapping>
+</web-app>
